@@ -19,42 +19,31 @@ int main(int argc, char** argv){
 
   //we'll send a goal to the robot to move 1 meter forward
   goal.target_pose.header.frame_id = "base_link";
+
   goal.target_pose.header.stamp = ros::Time::now();
-
-  goal.target_pose.pose.position.x = 20.0;
+  goal.target_pose.pose.position.x = 30.0;
   goal.target_pose.pose.position.y = 0.0;
-
   goal.target_pose.pose.orientation.w = 1.0;
-
-
   ROS_INFO("Sending goal");
   ac.sendGoal(goal);
-
   ac.waitForResult();
-
   if(ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED)
     ROS_INFO("GOAL 1 SUCCESSS!");
   else
     ROS_INFO("GOAL 1 FAIL!");
 
 
-  goal.target_pose.header.stamp = ros::Time::now();
-
-  goal.target_pose.pose.position.x = 3.0;
-  goal.target_pose.pose.position.y = 1.0;
-
-  goal.target_pose.pose.orientation.w = 1.0;
-
-
-  ROS_INFO("2Sending goal");
-  ac.sendGoal(goal);
-
-  ac.waitForResult();
-
-  if(ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED)
-    ROS_INFO("GOAL 2 SUCCESSS!");
-  else
-    ROS_INFO("GOAL 2 FAIL!");
+  // goal.target_pose.header.stamp = ros::Time::now();
+  // goal.target_pose.pose.position.x = 3.0;
+  // goal.target_pose.pose.position.y = 1.0;
+  // goal.target_pose.pose.orientation.w = 1.0;
+  // ROS_INFO("2Sending goal");
+  // ac.sendGoal(goal);
+  // ac.waitForResult();
+  // if(ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED)
+  //   ROS_INFO("GOAL 2 SUCCESSS!");
+  // else
+  //   ROS_INFO("GOAL 2 FAIL!");
 
   return 0;
 }

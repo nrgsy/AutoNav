@@ -4,8 +4,8 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded: ~
-      Splitter Ratio: 0.820513
-    Tree Height: 1150
+      Splitter Ratio: 0.838889
+    Tree Height: 1369
   - Class: rviz/Selection
     Name: Selection
   - Class: rviz/Tool Properties
@@ -50,53 +50,18 @@ Visualization Manager:
     - Alpha: 1
       Class: rviz/RobotModel
       Collision Enabled: false
-      Enabled: true
+      Enabled: false
       Links:
         All Links Enabled: true
         Expand Joint Details: false
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        base_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left0_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left4_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        lidar_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        mast:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right0_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right4_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
       Name: RobotModel
       Robot Description: robot_description
       TF Prefix: ""
       Update Interval: 0
-      Value: true
+      Value: false
       Visual Enabled: true
     - Alpha: 0.5
       Class: rviz/Map
@@ -145,27 +110,13 @@ Visualization Manager:
       Topic: /move_base/local_costmap/footprint
       Unreliable: false
       Value: true
-    - Alpha: 1
-      Class: rviz/Polygon
-      Color: 255; 255; 0
+    - Alpha: 0.5
+      Class: rviz/Map
+      Color Scheme: costmap
+      Draw Behind: false
       Enabled: true
-      Name: global_footprint
-      Topic: /move_base/global_costmap/footprint
-      Unreliable: false
-      Value: true
-    - Alpha: 1
-      Buffer Length: 1
-      Class: rviz/Path
-      Color: 255; 0; 0
-      Enabled: true
-      Line Style: Lines
-      Line Width: 0.03
-      Name: Global Plan
-      Offset:
-        X: 0
-        Y: 0
-        Z: 0
-      Topic: /move_base/DWAPlannerROS/global_plan
+      Name: local cost map
+      Topic: /move_base/local_costmap/costmap
       Unreliable: false
       Value: true
     - Alpha: 1
@@ -181,6 +132,38 @@ Visualization Manager:
         Y: 0
         Z: 0
       Topic: /move_base/DWAPlannerROS/local_plan
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Class: rviz/Polygon
+      Color: 255; 255; 0
+      Enabled: true
+      Name: global_footprint
+      Topic: /move_base/global_costmap/footprint
+      Unreliable: false
+      Value: true
+    - Alpha: 0.5
+      Class: rviz/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: true
+      Name: global cost map
+      Topic: /move_base/global_costmap/costmap
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz/Path
+      Color: 255; 0; 0
+      Enabled: true
+      Line Style: Lines
+      Line Width: 0.03
+      Name: Global Plan
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Topic: /move_base/DWAPlannerROS/global_plan
       Unreliable: false
       Value: true
     - Alpha: 1
@@ -298,7 +281,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 26.5413
+      Distance: 27.5089
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
@@ -310,10 +293,10 @@ Visualization Manager:
         Z: -3.41747
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 1.2448
+      Pitch: 0.694796
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 2.00373
+      Yaw: 0.553731
     Saved: ~
 Window Geometry:
   Displays:
@@ -323,7 +306,7 @@ Window Geometry:
   Hide Right Dock: false
   Image:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd00000004000000000000016a000004dbfc0200000007fb0000001200530065006c0065006300740069006f006e000000012b0000009b0000006400fffffffb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afc0000012b000004db000000f90100001bfa000000020100000003fb0000000a005600690065007700730100000000ffffffff0000010f00fffffffb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000000ffffffff0000008d00fffffffb000000100044006900730070006c0061007900730100000000000001e90000016a00fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000012f000004dbfc0200000002fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000001200530065006c0065006300740069006f006e010000025a000000b20000000000000000000000020000052a000000fdfc0100000003fb0000000a0049006d0061006700650100000000000002930000005700fffffffb0000000a0049006d0061006700650100000299000002910000005700fffffffb0000000a00560069006500770073030000004e00000080000002e100000197000000030000052a0000004cfc0100000002fb0000000800540069006d006501000000000000052a000002ab00fffffffb0000000800540069006d00650100000000000004500000000000000000000003ba000004db00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000400000000000001ea000004dbfc0200000006fb0000001200530065006c0065006300740069006f006e000000012b0000009b0000006400fffffffb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000016a000005b6fc0200000003fc00000063000005b6000000f90100001bfa000000020100000003fb0000000a005600690065007700730100000000ffffffff0000010f00fffffffb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000000ffffffff0000008d00fffffffb000000100044006900730070006c00610079007301000005200000016a0000016a00fffffffb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000001200530065006c0065006300740069006f006e010000025a000000b20000000000000000000000020000068a00000035fc0100000003fb0000000a0049006d0061006700650100000000000003440000005700fffffffb0000000a0049006d006100670065010000034a000003400000005700fffffffb0000000a00560069006500770073030000004e00000080000002e100000197000000030000068a00000039fc0100000002fb0000000800540069006d006501000000000000068a000002ab00fffffffb0000000800540069006d006501000000000000045000000000000000000000051a000005b600000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   Time:
@@ -332,6 +315,6 @@ Window Geometry:
     collapsed: false
   Views:
     collapsed: false
-  Width: 1322
-  X: 21
-  Y: 83
+  Width: 1674
+  X: 3
+  Y: 65
