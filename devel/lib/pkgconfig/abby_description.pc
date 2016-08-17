@@ -1,8 +1,0 @@
-prefix=/home/thomas/ros_ws/devel
-
-Name: abby_description
-Description: Description of abby_description
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/thomas/ros_ws/devel/lib 
-Requires: roscpp

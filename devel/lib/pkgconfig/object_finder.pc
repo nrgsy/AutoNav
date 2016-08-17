@@ -1,8 +1,0 @@
-prefix=/home/thomas/ros_ws/devel
-
-Name: object_finder
-Description: Description of object_finder
-Version: 0.0.0
-Cflags: -I/home/thomas/ros_ws/devel/include
-Libs: -L/home/thomas/ros_ws/devel/lib 
-Requires: message_runtime roscpp pcl_utils pcl_ros pcl_conversions pcl_msgs sensor_msgs tf actionlib

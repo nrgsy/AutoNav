@@ -1,8 +1,0 @@
-prefix=/home/thomas/ros_ws/install
-
-Name: sentry_teleop
-Description: Description of sentry_teleop
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/thomas/ros_ws/install/lib 
-Requires: roscpp geometry_msgs joy std_msgs cwru_base cwru_msgs

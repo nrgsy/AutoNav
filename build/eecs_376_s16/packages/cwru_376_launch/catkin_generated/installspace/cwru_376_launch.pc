@@ -1,8 +1,0 @@
-prefix=/home/thomas/ros_ws/install
-
-Name: cwru_376_launch
-Description: Description of cwru_376_launch
-Version: 0.0.1
-Cflags: 
-Libs: -L/home/thomas/ros_ws/install/lib 
-Requires: 

@@ -1,8 +1,0 @@
-prefix=/home/thomas/ros_ws/install
-
-Name: cwru_msgs
-Description: Description of cwru_msgs
-Version: 0.0.0
-Cflags: -I/home/thomas/ros_ws/install/include
-Libs: -L/home/thomas/ros_ws/install/lib 
-Requires: actionlib actionlib_msgs geometry_msgs nav_msgs std_msgs trajectory_msgs message_runtime

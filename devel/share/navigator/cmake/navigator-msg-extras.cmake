@@ -1,2 +1,0 @@
-set(navigator_MESSAGE_FILES "/home/thomas/ros_ws/devel/share/navigator/msg/navigatorAction.msg;/home/thomas/ros_ws/devel/share/navigator/msg/navigatorActionGoal.msg;/home/thomas/ros_ws/devel/share/navigator/msg/navigatorActionResult.msg;/home/thomas/ros_ws/devel/share/navigator/msg/navigatorActionFeedback.msg;/home/thomas/ros_ws/devel/share/navigator/msg/navigatorGoal.msg;/home/thomas/ros_ws/devel/share/navigator/msg/navigatorResult.msg;/home/thomas/ros_ws/devel/share/navigator/msg/navigatorFeedback.msg")
-set(navigator_SERVICE_FILES "")
