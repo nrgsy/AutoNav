@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package>
+  <name>cwru_srv</name>
+  <version>0.0.0</version>
+  <description>The cwru_srv package</description>
+
+  <maintainer email="bettaieb@case.edu">Luc Bettaieb</maintainer>
+  <author email="wsn@case.edu">Wyatt Newman</author>
+
+  <license>BSD</license>
+
+  <build_depend>message_generation</build_depend>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>message_generation</buildtool_depend>
+
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>nav_msgs</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>message_runtime</run_depend>
+
+</package>

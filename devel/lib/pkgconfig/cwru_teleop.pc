@@ -1,0 +1,8 @@
+prefix=/home/thomas/ros_ws/devel
+
+Name: cwru_teleop
+Description: Description of cwru_teleop
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/thomas/ros_ws/devel/lib 
+Requires: roscpp geometry_msgs joy std_msgs cwru_base cwru_msgs

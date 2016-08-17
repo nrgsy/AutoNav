@@ -1,0 +1,8 @@
+prefix=/home/thomas/ros_ws/devel
+
+Name: babs_nav
+Description: Description of babs_nav
+Version: 0.0.0
+Cflags: -I/home/thomas/ros_ws/src/student_code/sentry/babs_nav/include
+Libs: -L/home/thomas/ros_ws/devel/lib 
+Requires: move_base robot_state_publisher gazebo_ros

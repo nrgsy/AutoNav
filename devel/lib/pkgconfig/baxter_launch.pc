@@ -1,0 +1,8 @@
+prefix=/home/thomas/ros_ws/devel
+
+Name: baxter_launch
+Description: Description of baxter_launch
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/thomas/ros_ws/devel/lib 
+Requires: 

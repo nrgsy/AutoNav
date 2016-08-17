@@ -1,0 +1,8 @@
+prefix=/home/thomas/ros_ws/devel
+
+Name: cartesian_planner
+Description: Description of cartesian_planner
+Version: 0.0.0
+Cflags: -I/home/thomas/ros_ws/devel/include -I/home/thomas/ros_ws/src/learning_ros/Part_5/cartesian_planner/include
+Libs: -L/home/thomas/ros_ws/devel/lib -lcartesian_planner -larm7dof_cartesian_planner
+Requires: roscpp baxter_fk_ik joint_space_planner std_msgs geometry_msgs actionlib message_runtime baxter_trajectory_streamer tf

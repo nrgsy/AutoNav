@@ -1,0 +1,8 @@
+prefix=/home/thomas/ros_ws/install
+
+Name: tangent_bug
+Description: Description of tangent_bug
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/thomas/ros_ws/install/lib 
+Requires: tf roscpp std_msgs geometry_msgs nav_msgs sentry_traj_builder mapping_and_control message_runtime

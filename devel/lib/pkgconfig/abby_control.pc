@@ -1,0 +1,8 @@
+prefix=/home/thomas/ros_ws/devel
+
+Name: abby_control
+Description: Description of abby_control
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/thomas/ros_ws/devel/lib 
+Requires: roscpp

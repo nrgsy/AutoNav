@@ -1,0 +1,8 @@
+prefix=/home/thomas/ros_ws/devel
+
+Name: sentry_traj_builder
+Description: Description of sentry_traj_builder
+Version: 0.0.0
+Cflags: -I/home/thomas/ros_ws/src/student_code/sentry/traj_builder/include
+Libs: -L/home/thomas/ros_ws/devel/lib -lsentry_traj_builder
+Requires: roscpp nav_msgs geometry_msgs

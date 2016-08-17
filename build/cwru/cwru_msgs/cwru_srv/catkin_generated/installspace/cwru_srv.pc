@@ -1,0 +1,8 @@
+prefix=/home/thomas/ros_ws/install
+
+Name: cwru_srv
+Description: Description of cwru_srv
+Version: 0.0.0
+Cflags: -I/home/thomas/ros_ws/install/include
+Libs: -L/home/thomas/ros_ws/install/lib 
+Requires: message_runtime geometry_msgs nav_msgs roscpp std_msgs
